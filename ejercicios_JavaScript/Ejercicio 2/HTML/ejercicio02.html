@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio02</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Ejercicio02</h1>
+        <h2>Conversor Celsius/Farenheit y fechaNac</h2>
+    </header>
+    <main>
+        <h3>Conversor</h3>
+        <p>
+            <label for="celsius">Grados Celsius</label>
+            <input type="text" id="celsius" name="celsius" placeholder="ºC"
+            oninput="nuevoValorCelsius()">
+        </p>
+        <p>
+            <label for="farenheit">Grados Farenheit</label>
+            <input type="text" id="farenheit" name="farenheit" placeholder="ºF">
+        </p>
+        <hr>
+        <h3>Cálculo de edad</h3>
+        <p>
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date" id="fecha"  name="fecha" oninput="calcularEdad()">
+
+            <p id="edad"></p>
+        </p>
+    </main>
+    <footer>
+        <p>Creado por Alejandro Bernabé Alonso</p>
+        <p>IES Floridablanca - Ciclo de DAW</p>
+
+    </footer>
+    <script src="../JS/ejercicio02.js"></script>    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio03</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+</head>
+<body>
+    <main>
+        <div class="contenedor">
+            <h2>Personalizar Texto</h2>
+            <!-- Creo fila con dos columnas-->
+            <div class="filaFlex">
+                <div class="columnaFlex">
+                    <label for="colorTexto">Color texto:</label>
+                    <select id="colorTexto">
+                        <option value="black">Negro</option>
+                        <option value="yellow">Amarillo</option>
+                        <option value="violet">Violeta</option>
+                        <option value="blue">Azul</option>
+                    </select>
+                </div>
+                <div class="columnaFlex">
+                    <label for="colorFondo">Color fondo:</label>
+                    <select id="colorFondo">
+                        <option value="white">Blanco</option>
+                        <option value="black">Negro</option>
+                        <option value="violet">Violeta</option>
+                        <option value="blue">Azul</option>
+                    </select>
+                </div>
+            </div>
+            <!-- fin fila -->
+            <label for="tamaño">Tamaño de letra(px)</label>
+            <input type="number" id="tamaño" value="16" min="10" max="40"> 
+
+            <!-- Creo fila con dos columnas para los CHEKBOX-->
+            <div class="filaFlex">
+                <div class="columnaFlex">
+                    <input type="checkbox" id="negrita"> 
+                    <label for="negrita">Negrita</label>
+                </div>
+                <div class="columnaFlex">
+                    <input type="checkbox" id="cursiva"> 
+                    <label for="cursiva">Cursiva</label>
+                </div>
+            </div>
+            <!-- fin fila -->
+
+            <div id="texto">Texto de ejemplo</div>
+
+
+        </div>
+    </main>
+    <footer>
+        <p>Creado por Alejandro Bernabé Alonso</p>
+        <p>IES Floridablanca - Ciclo de DAW</p>
+    </footer>
+    <script src="../JS/ejercicio03.js"></script>
+
+</body>
+</html>
