@@ -1,24 +1,44 @@
-html{
-    font-size:20px;
+html, body {
+	height: 100%;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
-body{
-    margin: 0px;
+body {
+    text-align: center;
 }
 
-header{
-	display: flex;
+header {
+    margin-bottom: 20px;
+	background-color: #5C5EDB;
+	color: white;
 	text-align: center;
-    padding: 5px 0px;
 }
 
-main{
-	display:flex;
+main {
+    display: flex;
+    flex-direction: column; /* apila los elementos dentro de main verticalmente */
+    align-items: center;    /* centra horizontal */
+    gap: 15px; /* separación entre h3 y contenedor de botones */
 }
 
-main.div{
-	flex:1;
-	display:flex;
-	flex-direction: column;
+.contenedor {
+    display: flex;
+    gap: 10px; /* separación entre botones */
+    align-items: center; /* centra los botones horizontalmente */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+	cursor: pointer;
+}
+
+footer{
+    background-color: #5C5EDB;
+    color: white;
+    text-align: center;
+    padding: 5px 0px;  
+    
 }
